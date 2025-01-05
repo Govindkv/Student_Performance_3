@@ -1,12 +1,7 @@
 # Student_Performance_3
 3rd project in the series of 100 end to end.
 
-
   
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Scikit_learn_logo_small.svg/512px-Scikit_learn_logo_small.svg.png" alt="Scikit-learn" width="70"/>  
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Flask_logo.svg/512px-Flask_logo.svg.png" alt="Flask" width="70"/>  
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Pandas_logo.svg/512px-Pandas_logo.svg.png" alt="Pandas" width="70"/>  
-
 ---
 
 ## **Project Overview**
@@ -65,9 +60,14 @@ The project aims to predict students' math scores using their demographic and ac
    - Docker for containerization.  
 
 ---
-
-![Pipeline Diagram](https://via.placeholder.com/700x400.png?text=Pipeline+Flow+Diagram)  
-
+```mermaid
+graph TD
+    A[Raw Data] --> B[Data Ingestion]
+    B --> C[Data Transformation]
+    C --> D[Model Training]
+    D --> E[Model Evaluation]
+    E --> F[Deployment]
+```
 ---
 
 ## **Tools and Technologies**  
@@ -133,9 +133,14 @@ Visit [http://127.0.0.1:5000](http://127.0.0.1:5000) in your browser.
 
 ## **Screenshots and Visuals**  
 
-| ![Pipeline Diagram](https://via.placeholder.com/300x200.png?text=Pipeline+Diagram) | ![Predictions](https://via.placeholder.com/300x200.png?text=Prediction+Screenshot) |
-|:---------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------:|
-| **Project Pipeline**                                                              | **Prediction UI**                                                                 |  
+| ![Homepage](static/images/homepage.png) | ![Training](static/images/training_status.png) |  
+|:---------------------------------------:|:---------------------------------------:|  
+| **Homepage UI**                         | **Training Process**                    |  
+
+| ![Prediction UI](static/images/prediction_ui.png) | ![Prediction Result](static/images/prediction_result.png) |  
+|:-------------------------------------------------:|:---------------------------------------------------------:|  
+| **Prediction Input UI**                           | **Prediction Result Output**                              |  
+
 
 ---
 
@@ -143,6 +148,14 @@ Visit [http://127.0.0.1:5000](http://127.0.0.1:5000) in your browser.
 - Expand dataset for better generalization.  
 - Incorporate real-time data ingestion for live student performance monitoring.  
 - Build a mobile-friendly interface for wider accessibility.  
+
+---
+
+### Key Tools
+- ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
+- ![Flask](https://img.shields.io/badge/Flask-000000?logo=flask&logoColor=white)
+- ![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)
+- ![AWS](https://img.shields.io/badge/AWS-232F3E?logo=amazonaws&logoColor=white)
 
 ---
 
